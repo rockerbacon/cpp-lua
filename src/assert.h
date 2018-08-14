@@ -2,6 +2,7 @@
 
 #include <exception>
 #include <sstream>
+#include <iostream>
 
 namespace assertion {
 
@@ -10,9 +11,9 @@ namespace assertion {
 	 */
 	class assert_error : public std::exception {
 		private:
-			const char* message;
+			std::string message;
 		public:
-			assert_error (const char* message);
+			assert_error (const std::string& message);
 
 			const char* what (void) const throw();
 	};
