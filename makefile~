@@ -1,0 +1,6 @@
+CXX=g++ std=c++11
+
+tests:
+
+clean:
+	rm -f *.o
